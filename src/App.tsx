@@ -1,10 +1,17 @@
-import { Container } from '@/components/site/Container/Container'
-import { Header } from './components/site/Header/Header'
+import { Container } from '@/components/layout/Container/Container'
+import { Header } from './components/layout/Header/Header'
+import { Hero } from './components/layout/Hero/Hero'
+import { ImageUploader } from './components/site/ImageUploader/ImageUploader'
 
 function App() {
 	return (
 		<Container>
-			<Header />
+			<>
+				<Header />
+				<Hero>
+					<ImageUploader />
+				</Hero>
+			</>
 		</Container>
 	)
 }
